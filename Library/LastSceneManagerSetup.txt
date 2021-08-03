@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< refs/remotes/origin/main
 - path: Assets/Scenes/MainGame_Mani.unity
+=======
+- path: Assets/Scenes/MainGame.unity
+>>>>>>> levels
   isLoaded: 1
   isActive: 1
   isSubScene: 0

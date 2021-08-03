@@ -7,6 +7,7 @@ using Scanner;
 
 public class RoverScanner : MonoBehaviour
 {
+<<<<<<< refs/remotes/origin/main
     private float coolDownTimer;
     private float coolDownDelay;
 
@@ -19,10 +20,40 @@ public class RoverScanner : MonoBehaviour
 
     private ObjectPool minimapIconPool;
     private List<GameObject> scannedObjects = new List<GameObject>();
+=======
+    private LayerMask minimapLayer;
+    private float coolDownTimer;
+    private float coolDownDelay;
+
+    private float scanRadius;
+    private const float maxScanRadius = 50.0f;
+    private bool isScanning;
+
+    public Image scanID;
+    public Transform scanEffectMinimap;
+
+    public ScannerCameraEffect scanEffect;
+    public float m_ScanVelocity = 15f;
+    [Range(1f, 20f)] public float m_ScanWidth = 10f;
+    public Color m_Leading;
+    public Color m_Middle;
+    public Color m_Trail;
+    public Color m_HorizontalBar;
+
+    private RoverController playerCont;
+
+    // INTERACTING WITH POI
+
+>>>>>>> levels
 
     // Start is called before the first frame update
     void Start()
     {
+<<<<<<< refs/remotes/origin/main
+=======
+        minimapLayer = 1 << 8;
+
+>>>>>>> levels
         coolDownDelay = 3.0f;
         coolDownTimer = coolDownDelay;
 
@@ -30,9 +61,19 @@ public class RoverScanner : MonoBehaviour
 
         isScanning = false;
 
+<<<<<<< refs/remotes/origin/main
         playerCont = FindObjectOfType<RoverController>();
 
         minimapIconPool = GameObject.Find("Minimap Icon Pool").GetComponent<ObjectPool>();
+=======
+        scanEffect.m_Material.SetFloat("_ScanWidth", m_ScanWidth);
+        scanEffect.m_Material.SetColor("_LeadColor", m_Leading);
+        scanEffect.m_Material.SetColor("_MidColor", m_Middle);
+        scanEffect.m_Material.SetColor("_TrailColor", m_Trail);
+        scanEffect.m_Material.SetColor("_HBarColor", m_HorizontalBar);
+
+        playerCont = GetComponent<RoverController>();
+>>>>>>> levels
     }
 
     // Update is called once per frame
@@ -43,6 +84,7 @@ public class RoverScanner : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Q) && !isScanning)
             {
                 isScanning = true;
+<<<<<<< refs/remotes/origin/main
 
                 laserSource.SetActive(true);
                 coolDownTimer = 0.0f;
@@ -53,6 +95,13 @@ public class RoverScanner : MonoBehaviour
                     targetAngle = 359;
 
                 playerCont.roverEnergy -= 5;
+=======
+                coolDownTimer = 0.0f;
+                scanEffectMinimap.gameObject.SetActive(true);
+                playerCont.roverEnergy -= 5;
+
+                scanEffect.m_Origin = transform.position;
+>>>>>>> levels
             }
         }
         else if (!isScanning)
@@ -60,6 +109,7 @@ public class RoverScanner : MonoBehaviour
 
         scanID.fillAmount = coolDownTimer / coolDownDelay;
 
+<<<<<<< refs/remotes/origin/main
         transform.position = playerCont.transform.position;
 
     }
@@ -112,3 +162,52 @@ public class RoverScanner : MonoBehaviour
         }
     }
 }
+=======
+    }
+
+    void FixedUpdate()
+    {
+        if (isScanning)
+        {
+            // POI = Points Of Interest
+            Collider[] POI = Physics.OverlapSphere(transform.position, scanRadius, minimapLayer, QueryTriggerInteraction.Collide);
+
+            if (POI.Length > 0)
+            {
+                for (int i = 0; i < POI.Length; i++)
+                    POI[i].GetComponent<MinimapIconController>().ActivateIcon();
+            }
+
+            scanRadius += m_ScanVelocity * Time.deltaTime;
+
+            if (scanRadius >= maxScanRadius)
+            {
+                coolDownTimer = 0f;
+                scanRadius = 0f;
+                isScanning = false;
+                scanEffectMinimap.gameObject.SetActive(false);
+            }
+
+            scanEffect.SetScanDistance(scanRadius);
+            ParticleSystem.ShapeModule particleShape = scanEffectMinimap.GetComponent<ParticleSystem>().shape;
+            particleShape.radius = scanRadius;
+
+        }
+
+        scanEffectMinimap.position = transform.position;
+
+    }
+
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if(other.gameObject.CompareTag("POI"))
+    //    {
+    //        inRangeOfPOI = true;
+    //    }
+    //}
+
+
+}
+
+
+>>>>>>> levels

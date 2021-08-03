@@ -1,0 +1,36 @@
+﻿#pragma kernel GenerateWhiteNoise
+
+#define rnd(seed, constant)  wang_rnd(seed + triple32(_RandSeed) * constant)
+
+uint triple32(uint x)
+{
+	x ^= x >> 17;
+	x *= 0xed5ad4bbU;
+	x ^= x >> 11;
+	x *= 0xac4c1b51U;
+	x ^= x >> 15;
+	x *= 0x31848babU;
+	x ^= x >> 14;
+	return x;
+}
+
+float wang_rnd(uint seed)
+{
+	uint rndint = triple32(seed);
+	return ((float)rndint) / float(0xFFFFFFFF);   // 0xFFFFFFFF is max unsigned integer in hexa decimal
+}
+
+// Create a RenderTexture with enableRandomWrite flag and set it with cs.SetTexture
+RWTexture2D<float4> _WhiteNoise;
+uint                _RandSeed;
+
+#define Dimension 512
+
+[numthreads(8, 8, 1)]
+void GenerateWhiteNoise(uint3 id : SV_DispatchThreadID)
+{
+	uint  pixelID      = id.x + id.y * Dimension;
+	float randX        = rnd(pixelID, 1);
+	float randY        = rnd(pixelID, 861);
+	_WhiteNoise[id.xy] = float4(randX, randY, 0.0, 0.0);
+}

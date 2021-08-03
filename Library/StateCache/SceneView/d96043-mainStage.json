@@ -1,5 +1,9 @@
 <<<<<<< refs/remotes/origin/main
+<<<<<<< refs/remotes/origin/main
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":0.0,"y":0.0,"z":0.0},"rotation":{"x":-0.3013875484466553,"y":-0.03381912782788277,"z":0.0111239617690444,"w":-0.9529998898506165},"size":10.0,"orthographic":false}
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":1648.8643798828125,"y":-41.91307067871094,"z":1130.0264892578125},"rotation":{"x":-0.2209455966949463,"y":-0.14376874268054963,"z":0.0333394855260849,"w":-0.9642159938812256},"size":373.12017822265627,"orthographic":false}
 >>>>>>> levels
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":811.3424682617188,"y":228.3245391845703,"z":942.242919921875},"rotation":{"x":-0.13984675705432893,"y":0.6970146894454956,"z":-0.1408974528312683,"w":-0.6892551779747009},"size":175.1544189453125,"orthographic":false}
+>>>>>>> F-mod assets

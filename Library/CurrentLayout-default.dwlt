@@ -43,12 +43,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< refs/remotes/origin/main
     width: 1536
     height: 731
   m_MinSize: {x: 677, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
   controlID: 102
+=======
+    width: 2560
+    height: 1307
+  m_MinSize: {x: 677, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
+  vertical: 0
+  controlID: 20
+>>>>>>> F-mod assets
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -66,8 +75,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1225
     y: 0
+<<<<<<< refs/remotes/origin/main
     width: 311
     height: 731
+=======
+    width: 519
+    height: 1307
+>>>>>>> F-mod assets
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
@@ -92,8 +106,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< refs/remotes/origin/main
     width: 298
     height: 401
+=======
+    width: 497
+    height: 1036
+>>>>>>> F-mod assets
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
@@ -117,9 +136,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< refs/remotes/origin/main
     y: 401
     width: 1225
     height: 330
+=======
+    y: 1036
+    width: 2041
+    height: 271
+>>>>>>> F-mod assets
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 13}
@@ -214,12 +239,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< refs/remotes/origin/main
     width: 1225
     height: 731
   m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
   controlID: 103
+=======
+    width: 2041
+    height: 1307
+  m_MinSize: {x: 402, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
+  vertical: 1
+  controlID: 21
+>>>>>>> F-mod assets
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -239,12 +273,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< refs/remotes/origin/main
     width: 1225
     height: 401
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
   controlID: 104
+=======
+    width: 2041
+    height: 1036
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
+  vertical: 0
+  controlID: 22
+>>>>>>> F-mod assets
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -262,10 +305,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 298
     y: 0
+<<<<<<< refs/remotes/origin/main
     width: 927
     height: 401
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
+=======
+    width: 1544
+    height: 1036
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> F-mod assets
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -338,6 +388,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< refs/remotes/origin/main
     - Assets/Prefabs/UI
   m_ViewMode: 1
   m_StartGridSize: 57
@@ -352,6 +403,22 @@ MonoBehaviour:
     m_SelectedIDs: 6c430500
     m_LastClickedID: 344940
     m_ExpandedIDs: 00000000d40c0200d60c0200d80c0200da0c0200dc0c0200de0c0200e00c0200e20c0200e40c0200e60c0200e80c0200ea0c0200ec0c0200ee0c0200f00c0200f20c0200f40c0200f60c0200f80c0200fa0c02001435050018350500c2440500c444050000ca9a3b
+=======
+    - Assets/Scripts/Rover
+  m_ViewMode: 1
+  m_StartGridSize: 57
+  m_LastFolders:
+  - Assets/Scripts/Rover
+  m_LastFoldersGridSize: 57
+  m_LastProjectPath: C:\Users\COREY\Documents\Github\BioRoverTry2
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 570}
+    m_SelectedIDs: d80d0200
+    m_LastClickedID: 134616
+    m_ExpandedIDs: 00000000d20c0200d40c0200d60c0200d80c0200da0c0200dc0c0200de0c0200e00c0200e20c0200e40c0200e60c0200e80c0200ea0c0200ec0c0200ee0c0200f00c0200f20c0200f40c0200f60c0200f80c020000ca9a3b
+>>>>>>> F-mod assets
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -379,7 +446,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< refs/remotes/origin/main
     m_ExpandedIDs: 00000000d40c0200d60c0200d80c0200da0c0200dc0c0200de0c0200e00c0200e20c0200e40c0200e60c0200e80c0200ea0c0200ec0c0200ee0c0200f00c0200f20c0200f40c0200f60c0200f80c0200fa0c0200
+=======
+    m_ExpandedIDs: 00000000d20c0200d40c0200d60c0200d80c0200da0c0200dc0c0200de0c0200e00c0200e20c0200e40c0200e60c0200e80c0200ea0c0200ec0c0200ee0c0200f00c0200f20c0200f40c0200f60c0200f80c0200
+>>>>>>> F-mod assets
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -504,7 +575,11 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< refs/remotes/origin/main
       m_ExpandedIDs: 5085feff68fbffff0c4c0000e80d01006c3c0100
+=======
+      m_ExpandedIDs: 6afbffff
+>>>>>>> F-mod assets
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -564,9 +639,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< refs/remotes/origin/main
     m_Target: {x: 0, y: 0, z: 0}
     speed: 2
     m_Value: {x: 0, y: 0, z: 0}
+=======
+    m_Target: {x: 811.34247, y: 228.32454, z: 942.2429}
+    speed: 2
+    m_Value: {x: 811.34247, y: 228.32454, z: 942.2429}
+>>>>>>> F-mod assets
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -612,13 +693,23 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< refs/remotes/origin/main
     m_Target: {x: -0.30138755, y: -0.033819128, z: 0.011123962, w: -0.9529999}
     speed: 2
     m_Value: {x: -0.30134073, y: -0.033813875, z: 0.011122234, w: -0.9528519}
-  m_Size:
-    m_Target: 373.12018
+=======
+    m_Target: {x: -0.13984676, y: 0.6970147, z: -0.14089745, w: -0.6892552}
     speed: 2
+    m_Value: {x: -0.13791049, y: 0.70614594, z: -0.14275028, w: -0.6796772}
+>>>>>>> F-mod assets
+  m_Size:
+    m_Target: 175.15442
+    speed: 2
+<<<<<<< refs/remotes/origin/main
     m_Value: 5.431501
+=======
+    m_Value: 183.40778
+>>>>>>> F-mod assets
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -692,10 +783,17 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< refs/remotes/origin/main
     m_HBaseRangeMin: -370
     m_HBaseRangeMax: 370
     m_VBaseRangeMin: -143.6
     m_VBaseRangeMax: 143.6
+=======
+    m_HBaseRangeMin: -771
+    m_HBaseRangeMax: 771
+    m_VBaseRangeMin: -497
+    m_VBaseRangeMax: 497
+>>>>>>> F-mod assets
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -713,20 +811,34 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< refs/remotes/origin/main
       width: 925
       height: 359
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 462.5, y: 179.5}
+=======
+      width: 1542
+      height: 994
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 771, y: 497}
+>>>>>>> F-mod assets
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< refs/remotes/origin/main
       x: -462.5
       y: -179.5
       width: 925
       height: 359
+=======
+      x: -771
+      y: -497
+      width: 1542
+      height: 994
+>>>>>>> F-mod assets
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1156.25, y: 475}

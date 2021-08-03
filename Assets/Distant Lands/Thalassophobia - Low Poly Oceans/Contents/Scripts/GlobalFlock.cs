@@ -43,7 +43,7 @@ namespace DistantLands
 			{
 				goalPos = new Vector3(
 					Random.Range(-wanderSize, wanderSize),
-					Random.Range(-wanderSize, wanderSize),
+					Random.Range(-wanderSize / 2, wanderSize / 2),
 					Random.Range(-wanderSize, wanderSize)
 				);
 			}

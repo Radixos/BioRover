@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{7E03BE02-ED63-2565-2F52-F399DEE85722}</ProjectGuid>
+    <ProjectGuid>{36CB2D01-1692-FE6D-1E0E-99E8C626BADD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -47,7 +47,7 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>4.8.2.0</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>4.10.2.0</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>2019.4.2f1</UnityVersion>
@@ -76,12 +76,31 @@
     <Compile Include="Assets\Scanner\WorldScanning\Demo2.cs" />
     <Compile Include="Assets\Scanner\WorldScanning\Matrix\Matrix.cs" />
     <Compile Include="Assets\Scanner\WorldScanning\ScannerObject.cs" />
-    <Compile Include="Assets\Scripts\Camera\CammeraMotor.cs" />
-    <Compile Include="Assets\Scripts\OxygenBar.cs" />
+    <Compile Include="Assets\Scripts\Camera\FollowTarget.cs" />
+    <Compile Include="Assets\Scripts\Camera\MinimapCamera.cs" />
+    <Compile Include="Assets\Scripts\LightManager.cs" />
+    <Compile Include="Assets\Scripts\Rover\RandomDrop.cs" />
+    <Compile Include="Assets\Scripts\Rover\RoverEnergy.cs" />
+    <Compile Include="Assets\Scripts\Rover\RoverScanner.cs" />
     <Compile Include="Assets\Scripts\Rover\Rovercontroller.cs" />
+    <Compile Include="Assets\Scripts\Story\Mission.cs" />
+    <Compile Include="Assets\Scripts\Story\MissionManager.cs" />
+    <Compile Include="Assets\Scripts\Story\Objective.cs" />
+    <Compile Include="Assets\Scripts\Story\ObjectiveManager.cs" />
+    <Compile Include="Assets\Scripts\UI\EnergyBarScript.cs" />
+    <Compile Include="Assets\Scripts\UI\MenuAnimScript.cs" />
+    <Compile Include="Assets\Scripts\UI\MenuScript.cs" />
+    <Compile Include="Assets\Scripts\World\LocationOfInterest.cs" />
+    <Compile Include="Assets\Scripts\World\MinimapIconController.cs" />
+    <Compile Include="Assets\Scripts\World\ObjectOfInterest.cs" />
+    <Compile Include="Assets\Scripts\World\WorldTileManager.cs" />
+    <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Scanner\CameraScanning\GroundHalo.shader" />
     <None Include="Assets\Scanner\CameraScanning\ScanEffect.shader" />
     <None Include="Assets\Scanner\ModelScanning\Intersection1.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Scanner\WorldScanning\Matrix\Matrix.shader" />
     <None Include="Assets\Scanner\WorldScanning\Utils.cginc" />
     <None Include="Assets\Scanner\WorldScanning\Transparency Textured.shader" />
@@ -90,21 +109,36 @@
     <None Include="Assets\Distant Lands\Thalassophobia - Low Poly Oceans\Contents\Materials\Shaders\Stylized Fog.shader" />
     <None Include="Assets\Scanner\ModelScanning\Intersection2.shader" />
     <None Include="Assets\Scanner\Readme.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Distant Lands\Thalassophobia - Low Poly Oceans\Contents\Materials\Shaders\Stylized Grass.shader" />
     <None Include="Assets\Distant Lands\Thalassophobia - Low Poly Oceans\Contents\Materials\Shaders\Stylized Kelp.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\Distant Lands\Thalassophobia - Low Poly Oceans\Contents\Materials\Shaders\StylizedTerrain.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Distant Lands\Thalassophobia - Low Poly Oceans\Contents\Materials\Shaders\Stylized Terrain Add Pass.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Distant Lands\Thalassophobia - Low Poly Oceans\Contents\Materials\Shaders\Stylized Fish.shader" />
     <None Include="Assets\Distant Lands\Thalassophobia - Low Poly Oceans\Contents\Materials\Shaders\Stylized Glass.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Scanner\WorldScanning\Standard.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Scanner\WorldScanning\Matrix\GenerateWhiteNoise.compute" />
     <None Include="Assets\Scanner\WorldScanning\Transparency.shader" />
     <None Include="Assets\Distant Lands\Thalassophobia - Low Poly Oceans\Contents\Materials\Shaders\Stylized Caustics.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Distant Lands\Thalassophobia - Low Poly Oceans\Contents\Materials\Shaders\Stylized Dynamic Coral.shader" />
     <None Include="Assets\Distant Lands\Thalassophobia - Low Poly Oceans\Contents\Materials\Shaders\Stylized Coral.shader" />
     <None Include="Assets\Distant Lands\Thalassophobia - Low Poly Oceans\README.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\Distant Lands\Thalassophobia - Low Poly Oceans\Contents\Materials\Shaders\Stylized Water Surface.shader" />
     <None Include="Assets\Scanner\WorldScanning\Transparency Stripe.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -287,6 +321,9 @@
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.2f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="clipper_library">
+      <HintPath>C:/Users/COREY/Documents/Github/Bio-Rover/Library/PackageCache/com.unity.cinemachine@2.7.4/Runtime/ThirdParty/clipper_library.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.2f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -634,48 +671,54 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.2f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/COREY/Documents/Github/Bio Rover/Bio Rover/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/COREY/Documents/Github/Bio-Rover/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>C:/Users/COREY/Documents/Github/Bio-Rover/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/COREY/Documents/Github/Bio Rover/Bio Rover/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/COREY/Documents/Github/Bio-Rover/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/COREY/Documents/Github/Bio Rover/Bio Rover/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/COREY/Documents/Github/Bio-Rover/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/COREY/Documents/Github/Bio Rover/Bio Rover/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/COREY/Documents/Github/Bio-Rover/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/COREY/Documents/Github/Bio Rover/Bio Rover/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/COREY/Documents/Github/Bio-Rover/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/COREY/Documents/Github/Bio Rover/Bio Rover/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/COREY/Documents/Github/Bio-Rover/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/COREY/Documents/Github/Bio Rover/Bio Rover/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/COREY/Documents/Github/Bio-Rover/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>C:/Users/COREY/Documents/Github/Bio-Rover/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/COREY/Documents/Github/Bio Rover/Bio Rover/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/COREY/Documents/Github/Bio-Rover/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/COREY/Documents/Github/Bio Rover/Bio Rover/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/COREY/Documents/Github/Bio-Rover/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="FMODUnity.csproj">
-      <Project>{E3990930-39AC-7D5C-0045-90B7EB750932}</Project>
+      <Project>{498671E7-36F4-97A2-54CA-B1D46A9407DE}</Project>
       <Name>FMODUnity</Name>
     </ProjectReference>
     <ProjectReference Include="FMODUnityResonance.csproj">
-      <Project>{31240DD9-B008-E7F2-FD80-9BAEA51E0715}</Project>
+      <Project>{038068D8-EE2F-1B17-DB37-1CA2759C1BC8}</Project>
       <Name>FMODUnityResonance</Name>
     </ProjectReference>
     <ProjectReference Include="FMODUnityResonanceEditor.csproj">
-      <Project>{8C102AEB-151A-D533-5DF1-3AEA168418F0}</Project>
+      <Project>{702805AD-E479-98E5-ECFA-D0BF0E50DAE7}</Project>
       <Name>FMODUnityResonanceEditor</Name>
     </ProjectReference>
     <ProjectReference Include="FMODUnityEditor.csproj">
-      <Project>{D19E70C6-E7E2-6EAA-7DEA-B986CDB309E1}</Project>
+      <Project>{6873CCF4-1DBB-5D26-3D6A-78997A96B8F9}</Project>
       <Name>FMODUnityEditor</Name>
     </ProjectReference>
   </ItemGroup>

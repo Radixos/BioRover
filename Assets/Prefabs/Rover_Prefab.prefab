@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1450067570799553923}
   m_Layer: 0
   m_Name: Rover_Prefab
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,7 +76,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 717ebce73703321448f9fb154f8da067, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roverSpeed: 0
+  roverSpeed: 5
+  roverEnergy: 100
+  UICanvas: {fileID: 0}
+  moveX: 0
+  moveZ: 0
+  lightSources: []
+  minimapIcon: {fileID: 0}
+  cameraTransform: {fileID: 0}
 --- !u!1001 &644711379459146791
 PrefabInstance:
   m_ObjectHideFlags: 0

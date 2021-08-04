@@ -26,15 +26,10 @@ public class MinimapIconController : MonoBehaviour
             if (deactivateTimer >= deactivateDelay)
             {
                 deactivateTimer = 0.0f;
-                spriteRenderer.enabled = false;
+                gameObject.SetActive(false);
             }
             else
                 deactivateTimer += Time.deltaTime;
         }
-    }
-
-    public void ActivateIcon()
-    {
-        spriteRenderer.enabled = true;
     }
 }

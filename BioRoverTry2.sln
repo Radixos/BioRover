@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{C934235B-147B-0854-A04F-D109F82C8983}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMODUnity", "FMODUnity.csproj", "{EB0A89ED-3A6D-A572-8B13-66D44F3107F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMODUnityEditor", "FMODUnityEditor.csproj", "{0BD73C54-25F5-D43A-35E0-0C9B111EEC0E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C934235B-147B-0854-A04F-D109F82C8983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C934235B-147B-0854-A04F-D109F82C8983}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C934235B-147B-0854-A04F-D109F82C8983}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C934235B-147B-0854-A04F-D109F82C8983}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB0A89ED-3A6D-A572-8B13-66D44F3107F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB0A89ED-3A6D-A572-8B13-66D44F3107F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB0A89ED-3A6D-A572-8B13-66D44F3107F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB0A89ED-3A6D-A572-8B13-66D44F3107F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BD73C54-25F5-D43A-35E0-0C9B111EEC0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BD73C54-25F5-D43A-35E0-0C9B111EEC0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BD73C54-25F5-D43A-35E0-0C9B111EEC0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BD73C54-25F5-D43A-35E0-0C9B111EEC0E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MinimapIconController : MonoBehaviour
 {
-    private SpriteRenderer spriteRenderer;
+    //private SpriteRenderer spriteRenderer;
 
     private float deactivateDelay;
     private float deactivateTimer;
@@ -12,7 +12,7 @@ public class MinimapIconController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        //spriteRenderer = GetComponent<SpriteRenderer>();
 
         deactivateDelay = 3.0f;
         deactivateTimer = 0.0f;
@@ -21,20 +21,12 @@ public class MinimapIconController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(spriteRenderer.enabled)
+        if (deactivateTimer >= deactivateDelay)
         {
-            if (deactivateTimer >= deactivateDelay)
-            {
-                deactivateTimer = 0.0f;
-                spriteRenderer.enabled = false;
-            }
-            else
-                deactivateTimer += Time.deltaTime;
+            deactivateTimer = 0.0f;
+            gameObject.SetActive(false);
         }
-    }
-
-    public void ActivateIcon()
-    {
-        spriteRenderer.enabled = true;
+        else
+            deactivateTimer += Time.deltaTime;
     }
 }

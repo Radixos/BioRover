@@ -7,35 +7,22 @@ using Scanner;
 
 public class RoverScanner : MonoBehaviour
 {
-    private LayerMask minimapLayer;
     private float coolDownTimer;
     private float coolDownDelay;
 
-    private float scanRadius;
-    private const float maxScanRadius = 50.0f;
     private bool isScanning;
-
     public Image scanID;
-    public Transform scanEffectMinimap;
-
-    public ScannerCameraEffect scanEffect;
-    public float m_ScanVelocity = 15f;
-    [Range(1f, 20f)] public float m_ScanWidth = 10f;
-    public Color m_Leading;
-    public Color m_Middle;
-    public Color m_Trail;
-    public Color m_HorizontalBar;
+    public GameObject laserSource;
+    private float targetAngle; // Angle to stop the scan
 
     private RoverController playerCont;
 
-    // INTERACTING WITH POI
-
+    private ObjectPool minimapIconPool;
+    private List<GameObject> scannedObjects = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
     {
-        minimapLayer = 1 << 8;
-
         coolDownDelay = 3.0f;
         coolDownTimer = coolDownDelay;
 
@@ -43,13 +30,9 @@ public class RoverScanner : MonoBehaviour
 
         isScanning = false;
 
-        scanEffect.m_Material.SetFloat("_ScanWidth", m_ScanWidth);
-        scanEffect.m_Material.SetColor("_LeadColor", m_Leading);
-        scanEffect.m_Material.SetColor("_MidColor", m_Middle);
-        scanEffect.m_Material.SetColor("_TrailColor", m_Trail);
-        scanEffect.m_Material.SetColor("_HBarColor", m_HorizontalBar);
+        playerCont = FindObjectOfType<RoverController>();
 
-        playerCont = GetComponent<RoverController>();
+        minimapIconPool = GameObject.Find("Minimap Icon Pool").GetComponent<ObjectPool>();
     }
 
     // Update is called once per frame
@@ -60,11 +43,16 @@ public class RoverScanner : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Q) && !isScanning)
             {
                 isScanning = true;
-                coolDownTimer = 0.0f;
-                scanEffectMinimap.gameObject.SetActive(true);
-                playerCont.roverEnergy -= 5;
 
-                scanEffect.m_Origin = transform.position;
+                laserSource.SetActive(true);
+                coolDownTimer = 0.0f;
+
+                targetAngle = Mathf.RoundToInt(transform.eulerAngles.y - 1);
+
+                if (targetAngle < 0)
+                    targetAngle = 359;
+
+                playerCont.roverEnergy -= 5;
             }
         }
         else if (!isScanning)
@@ -72,50 +60,58 @@ public class RoverScanner : MonoBehaviour
 
         scanID.fillAmount = coolDownTimer / coolDownDelay;
 
+        transform.position = playerCont.transform.position;
+
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
-        if (isScanning)
+        if (isScanning) // Scanning device rotating around Bio-Rover when scan feature is activated
         {
-            // POI = Points Of Interest
-            Collider[] POI = Physics.OverlapSphere(transform.position, scanRadius, minimapLayer, QueryTriggerInteraction.Collide);
+            transform.Rotate(Vector3.up, 90 * Time.deltaTime);
+            RaycastHit hit;
 
-            if (POI.Length > 0)
+            // Checking if scanner has completed a 360 journey
+            if (transform.eulerAngles.y >= targetAngle - 2.0f && transform.eulerAngles.y <= targetAngle)
             {
-                for (int i = 0; i < POI.Length; i++)
-                    POI[i].GetComponent<MinimapIconController>().ActivateIcon();
-            }
-
-            scanRadius += m_ScanVelocity * Time.deltaTime;
-
-            if (scanRadius >= maxScanRadius)
-            {
-                coolDownTimer = 0f;
-                scanRadius = 0f;
                 isScanning = false;
-                scanEffectMinimap.gameObject.SetActive(false);
+                laserSource.SetActive(false);
+                scannedObjects.Clear();
             }
+            // Placing an icon at the object's position
+            else if (Physics.Raycast(transform.position, transform.forward, out hit, 400.0f))
+            {
+                if (hit.collider.gameObject.name != "Terrain" &&
+                    !scannedObjects.Contains(hit.collider.gameObject))
+                {
+                    Debug.Log(hit.collider.gameObject.name);
 
-            scanEffect.SetScanDistance(scanRadius);
-            ParticleSystem.ShapeModule particleShape = scanEffectMinimap.GetComponent<ParticleSystem>().shape;
-            particleShape.radius = scanRadius;
+                    GameObject obj = minimapIconPool.GetPooledObject();
 
+                    obj.transform.position = hit.collider.transform.position + Vector3.up * 5.0f;
+
+                    // Object Differentiation
+                    if (hit.collider.gameObject.name.Contains("MM_"))
+                        obj.GetComponent<SpriteRenderer>().color = Color.yellow;
+                    else if (hit.collider.gameObject.name.Contains("SM_"))
+                        obj.GetComponent<SpriteRenderer>().color = Color.cyan;
+                    else
+                        obj.GetComponent<SpriteRenderer>().color = new Color(0.5f, 0.5f, 0.5f);
+
+                    obj.SetActive(true);
+                    scannedObjects.Add(hit.collider.gameObject);
+                }
+            }
         }
+        else // Scanner device facing camera direction
+        {
+            Vector3 lookVector = new Vector3(playerCont.cameraTransform.transform.forward.x,
+                0, playerCont.cameraTransform.transform.forward.z);
 
-        scanEffectMinimap.position = transform.position;
+            Quaternion lookRotation = Quaternion.LookRotation(lookVector);
 
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, lookRotation, 75 * Time.deltaTime);
+        }
     }
-
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    if(other.gameObject.CompareTag("POI"))
-    //    {
-    //        inRangeOfPOI = true;
-    //    }
-    //}
-
-
 }
-
 

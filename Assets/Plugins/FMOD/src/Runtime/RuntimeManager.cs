@@ -1269,6 +1269,8 @@ retry:
             }
         }
 
+        public static object LowlevelSystem { get; set; }
+
         public static bool HasBankLoaded(string loadedBank)
         {
             return (Instance.loadedBanks.ContainsKey(loadedBank));

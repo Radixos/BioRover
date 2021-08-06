@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{4467ca56-9cf2-48f9-adf4-9a4960305a78}">
+		<property name="name">
+			<value>Occlusion</value>
+		</property>
+		<relationship name="folder">
+			<destination>{0f4d91e1-84fd-406a-8595-c6cb253b1f71}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{3f79f58f-7d27-4467-8ccf-863f3c32aa79}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{3f79f58f-7d27-4467-8ccf-863f3c32aa79}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.89999997615814209</value>
+		</property>
+	</object>
+</objects>

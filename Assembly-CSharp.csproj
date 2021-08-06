@@ -80,9 +80,9 @@
     <Compile Include="Assets\Scripts\Camera\MinimapCamera.cs" />
     <Compile Include="Assets\Scripts\LightManager.cs" />
     <Compile Include="Assets\Scripts\Rover\RandomDrop.cs" />
+    <Compile Include="Assets\Scripts\Rover\RoverController.cs" />
     <Compile Include="Assets\Scripts\Rover\RoverEnergy.cs" />
     <Compile Include="Assets\Scripts\Rover\RoverScanner.cs" />
-    <Compile Include="Assets\Scripts\Rover\Rovercontroller.cs" />
     <Compile Include="Assets\Scripts\Story\Mission.cs" />
     <Compile Include="Assets\Scripts\Story\MissionManager.cs" />
     <Compile Include="Assets\Scripts\Story\Objective.cs" />
@@ -708,14 +708,6 @@
     <ProjectReference Include="FMODUnity.csproj">
       <Project>{498671E7-36F4-97A2-54CA-B1D46A9407DE}</Project>
       <Name>FMODUnity</Name>
-    </ProjectReference>
-    <ProjectReference Include="FMODUnityResonance.csproj">
-      <Project>{038068D8-EE2F-1B17-DB37-1CA2759C1BC8}</Project>
-      <Name>FMODUnityResonance</Name>
-    </ProjectReference>
-    <ProjectReference Include="FMODUnityResonanceEditor.csproj">
-      <Project>{702805AD-E479-98E5-ECFA-D0BF0E50DAE7}</Project>
-      <Name>FMODUnityResonanceEditor</Name>
     </ProjectReference>
     <ProjectReference Include="FMODUnityEditor.csproj">
       <Project>{6873CCF4-1DBB-5D26-3D6A-78997A96B8F9}</Project>

@@ -25,8 +25,11 @@
 	</object>
 	<object class="MixerBusPanner" id="{ad30a4a2-426d-4d4c-a27b-6ac721ad9089}" />
 	<object class="SFXReverbEffect" id="{0367c327-18bf-49af-b783-68931375e293}">
+		<property name="bypass">
+			<value>true</value>
+		</property>
 		<property name="wetLevel">
-			<value>0</value>
+			<value>-64</value>
 		</property>
 		<property name="dryLevel">
 			<value>-80</value>

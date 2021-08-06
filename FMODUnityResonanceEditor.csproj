@@ -637,12 +637,7 @@
       <HintPath>C:/Users/COREY/Documents/Github/Bio-Rover/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="FMODUnityResonance.csproj">
-      <Project>{038068D8-EE2F-1B17-DB37-1CA2759C1BC8}</Project>
-      <Name>FMODUnityResonance</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup></ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -81,6 +81,7 @@
     <Compile Include="Assets\Scanner\WorldScanning\ScannerObject.cs" />
     <Compile Include="Assets\Scripts\Camera\FollowTarget.cs" />
     <Compile Include="Assets\Scripts\Camera\MinimapCamera.cs" />
+    <Compile Include="Assets\Scripts\FollowRover.cs" />
     <Compile Include="Assets\Scripts\LightManager.cs" />
     <Compile Include="Assets\Scripts\Rover\RandomDrop.cs" />
     <Compile Include="Assets\Scripts\Rover\RoverController.cs" />

@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scanner\WorldScanning\Demo2.cs" />
     <Compile Include="Assets\Scanner\WorldScanning\Matrix\Matrix.cs" />
     <Compile Include="Assets\Scanner\WorldScanning\ScannerObject.cs" />
+    <Compile Include="Assets\Scripts\AudioScripts\CustomListenerScript.cs" />
     <Compile Include="Assets\Scripts\Camera\FollowTarget.cs" />
     <Compile Include="Assets\Scripts\Camera\MinimapCamera.cs" />
     <Compile Include="Assets\Scripts\FollowRover.cs" />

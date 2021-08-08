@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPresetFolder" id="{e0e22542-88f9-4b2d-a404-6ef39cdbd51c}">
+		<property name="name">
+			<value>minigame</value>
+		</property>
+		<relationship name="folder">
+			<destination>{3802833f-270f-48d0-a385-967abbdbc2fc}</destination>
+		</relationship>
+	</object>
+</objects>

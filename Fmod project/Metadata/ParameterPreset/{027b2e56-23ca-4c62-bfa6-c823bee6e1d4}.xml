@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{027b2e56-23ca-4c62-bfa6-c823bee6e1d4}">
+		<property name="name">
+			<value>Gondola_idle</value>
+		</property>
+		<relationship name="folder">
+			<destination>{9e46405a-b894-4886-8788-54252088b2b7}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{714dd5e6-be6a-429d-b908-ef532a2b6116}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{714dd5e6-be6a-429d-b908-ef532a2b6116}">
+		<property name="maximum">
+			<value>100</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>11.999999731779099</value>
+		</property>
+	</object>
+</objects>

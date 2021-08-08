@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{47795691-4530-4f3e-a141-978f6f73fd8b}">
+		<property name="name">
+			<value>calm</value>
+		</property>
+		<relationship name="folder">
+			<destination>{e0e22542-88f9-4b2d-a404-6ef39cdbd51c}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{a4e2b79a-35c1-49fd-9cc7-9b5afe123429}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{a4e2b79a-35c1-49fd-9cc7-9b5afe123429}">
+		<property name="maximum">
+			<value>100</value>
+		</property>
+		<property name="initialValue">
+			<value>100</value>
+		</property>
+		<property name="seekSpeed">
+			<value>11.999999731779099</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

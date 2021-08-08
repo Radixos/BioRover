@@ -103,6 +103,7 @@
     <Compile Include="Assets\Scanner\WorldScanning\Matrix\Matrix.cs" />
     <Compile Include="Assets\Scanner\WorldScanning\ScannerObject.cs" />
     <Compile Include="Assets\Scripts\AudioScripts\CustomListenerScript.cs" />
+    <Compile Include="Assets\Scripts\AudioScripts\MusicIntensity.cs" />
     <Compile Include="Assets\Scripts\Camera\FollowTarget.cs" />
     <Compile Include="Assets\Scripts\Camera\MinimapCamera.cs" />
     <Compile Include="Assets\Scripts\FollowRover.cs" />
@@ -355,11 +356,11 @@
     <Reference Include="UnityEditor">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.2f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="clipper_library">
-      <HintPath>C:/Users/COREY/Documents/Github/BioRoverTry2/Library/PackageCache/com.unity.cinemachine@2.7.4/Runtime/ThirdParty/clipper_library.dll</HintPath>
-    </Reference>
     <Reference Include="DOTween">
       <HintPath>C:/Users/COREY/Documents/Github/BioRoverTry2/Assets/SWS/Extensions/DOTween/DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="clipper_library">
+      <HintPath>C:/Users/COREY/Documents/Github/BioRoverTry2/Library/PackageCache/com.unity.cinemachine@2.7.4/Runtime/ThirdParty/clipper_library.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.2f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

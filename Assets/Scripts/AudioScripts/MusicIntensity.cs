@@ -11,15 +11,15 @@ public class MusicIntensity : MonoBehaviour
 
 
     // Start is called before the first frame update
-        StudioEventEmitter MusicEmitter;
-   
-        [Range(0, 100)] [SerializeField] int calm = 100;
-        [Range(0, 50)] [SerializeField] int fade = 50;
-        [Range(0, 100)] [SerializeField] int gondola_idle = 100;
+    StudioEventEmitter MusicEmitter;
 
-        int prevcalm = 100;
-        int prevfade = 50;
-        int prev = 100;
+    [Range(0, 100)] public int calm = 100;
+    [Range(0, 50)] public int fade = 50;
+    [Range(0, 100)] public int gondola_idle = 100;
+
+    float prevcalm = 100;
+    float prevfade = 50;
+    float prevGondola = 100;
 
 
     private void Start()
@@ -28,30 +28,91 @@ public class MusicIntensity : MonoBehaviour
 
         MusicEmitter.SetParameter("calm", (float)calm);
         MusicEmitter.SetParameter("fade", (float)fade);
-        MusicEmitter.SetParameter("gondola_idle", (float)gondola_idle);
-
+        MusicEmitter.SetParameter("Gondola_idle", (float)gondola_idle);
     }
 
 
-        private void Update()
+    private void Update()
+    {
+        if (calm != prevcalm)
         {
-            if (calm != prevcalm)
-            {
-                MusicEmitter.SetParameter("calm", (float)calm);
-                prevcalm = calm;
-            }
+            //MusicEmitter.SetParameter("calm", (float)calm);
 
-            if (fade != prevfade)
-            {
-                MusicEmitter.SetParameter("fade", (float)fade);
-                fade = prevfade;
-            }
+            //for(int i = 0; i < MusicEmitter.Params.Length; i++)
+            //{
+            //    if(MusicEmitter.Params[i].Name == "calm")
+            //    {
+            //        MusicEmitter.Params[i].Value = (float)calm;
+            //        break;
+            //    }
+            //}
 
-            if (gondola_idle != calm)
+            if(calm > prevcalm)
             {
-                MusicEmitter.SetParameter("fade", (float)fade);
-                prevfade = fade;
+                prevcalm += (float)(3f * Time.deltaTime);
+
+                for (int i = 0; i < MusicEmitter.Params.Length; i++)
+                {
+                    if (MusicEmitter.Params[i].Name == "calm")
+                    {
+                        MusicEmitter.Params[i].Value = (float)prevcalm;
+                        break;
+                    }
+                }
+
+                if(prevcalm > calm)
+                    prevcalm = calm;
+            }
+            else if(calm < prevcalm)
+            {
+                prevcalm -= (float)(3f * Time.deltaTime);
+
+                for (int i = 0; i < MusicEmitter.Params.Length; i++)
+                {
+                    if (MusicEmitter.Params[i].Name == "calm")
+                    {
+                        MusicEmitter.Params[i].Value = (float)prevcalm;
+                        break;
+                    }
+                }
+
+                if (prevcalm < calm)
+                    prevcalm = calm;
             }
         }
+
+
+        if (fade != prevfade)
+        {
+            //MusicEmitter.SetParameter("fade", (float)fade);
+
+            for (int i = 0; i < MusicEmitter.Params.Length; i++)
+            {
+                if (MusicEmitter.Params[i].Name == "fade")
+                {
+                    MusicEmitter.Params[i].Value = (float)fade;
+                    break;
+                }
+            }
+
+            prevfade = fade;
+        }
+
+        if (gondola_idle != prevGondola)
+        {
+            //MusicEmitter.SetParameter("Gondola_idle", (float)gondola_idle);
+
+            for (int i = 0; i < MusicEmitter.Params.Length; i++)
+            {
+                if (MusicEmitter.Params[i].Name == "Gondola_idle")
+                {
+                    MusicEmitter.Params[i].Value = (float)gondola_idle;
+                    break;
+                }
+            }
+
+            prevGondola = gondola_idle;
+        }
     }
+}
 

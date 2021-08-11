@@ -91,8 +91,8 @@ For the "gondola_idle" parameter... I think we floated it along with the calm pa
 			<destination>{d635082d-cd94-47d6-be8e-f26753f00a57}</destination>
 		</relationship>
 		<relationship name="modules">
-			<destination>{25100288-efc0-4b5c-ba81-79c400daa463}</destination>
-			<destination>{856b3a22-d73c-49c2-92db-0b04c9a6bffc}</destination>
+			<destination>{7de20031-2ec3-485b-98b2-c52233c5fea4}</destination>
+			<destination>{a9a26360-47c9-4d29-8e21-25185a917122}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{cc7fe6b8-17c2-4cd1-ae13-a3d4df2f71c7}</destination>
@@ -103,8 +103,8 @@ For the "gondola_idle" parameter... I think we floated it along with the calm pa
 			<destination>{42e2872e-1949-4158-ac53-5e30fc84f6f2}</destination>
 		</relationship>
 		<relationship name="modules">
-			<destination>{914a2911-be2a-40e9-b3a1-31e071703b2d}</destination>
-			<destination>{3d577ece-6733-4ebc-94e6-e57f1d2ccff0}</destination>
+			<destination>{bd6475ec-6276-455a-9990-bcaaedf48f65}</destination>
+			<destination>{1e5f5a02-7a52-4c3c-9c2d-4fe5339d35d1}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{3116a3e8-64c0-4e2a-8782-136bb373179f}</destination>
@@ -130,10 +130,10 @@ For the "gondola_idle" parameter... I think we floated it along with the calm pa
 	</object>
 	<object class="Timeline" id="{17cba755-b59e-42aa-b964-cca426356ef6}">
 		<relationship name="modules">
-			<destination>{914a2911-be2a-40e9-b3a1-31e071703b2d}</destination>
-			<destination>{25100288-efc0-4b5c-ba81-79c400daa463}</destination>
-			<destination>{3d577ece-6733-4ebc-94e6-e57f1d2ccff0}</destination>
-			<destination>{856b3a22-d73c-49c2-92db-0b04c9a6bffc}</destination>
+			<destination>{7de20031-2ec3-485b-98b2-c52233c5fea4}</destination>
+			<destination>{a9a26360-47c9-4d29-8e21-25185a917122}</destination>
+			<destination>{bd6475ec-6276-455a-9990-bcaaedf48f65}</destination>
+			<destination>{1e5f5a02-7a52-4c3c-9c2d-4fe5339d35d1}</destination>
 		</relationship>
 		<relationship name="markers">
 			<destination>{da3d7b56-6c76-4bfb-94ac-95a411bd5a57}</destination>
@@ -205,23 +205,23 @@ For the "gondola_idle" parameter... I think we floated it along with the calm pa
 			<destination>{af2bb911-f145-46a3-815d-a16a71fedbc8}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{25100288-efc0-4b5c-ba81-79c400daa463}">
+	<object class="SingleSound" id="{7de20031-2ec3-485b-98b2-c52233c5fea4}">
 		<property name="length">
 			<value>6.8243990929705216</value>
 		</property>
 		<relationship name="audioFile">
-			<destination>{b7c2f0e9-2647-48ea-9f61-4fc5b65789a3}</destination>
+			<destination>{04de00b4-e546-44cf-bfd1-37f52ec818b3}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{856b3a22-d73c-49c2-92db-0b04c9a6bffc}">
+	<object class="SingleSound" id="{a9a26360-47c9-4d29-8e21-25185a917122}">
 		<property name="start">
-			<value>6.8243990929705216</value>
+			<value>6.8243990929705234</value>
 		</property>
 		<property name="length">
 			<value>53.244988662131519</value>
 		</property>
 		<relationship name="audioFile">
-			<destination>{d9888bb3-2f3f-462b-92f0-43f3779f4224}</destination>
+			<destination>{ad47c5a3-0dd1-4748-b79c-d705292c7d01}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{cc7fe6b8-17c2-4cd1-ae13-a3d4df2f71c7}">
@@ -249,23 +249,23 @@ For the "gondola_idle" parameter... I think we floated it along with the calm pa
 			<destination>{12dec038-bb6f-4d01-800a-715478847e1b}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{914a2911-be2a-40e9-b3a1-31e071703b2d}">
+	<object class="SingleSound" id="{bd6475ec-6276-455a-9990-bcaaedf48f65}">
 		<property name="length">
 			<value>6.8243990929705216</value>
 		</property>
 		<relationship name="audioFile">
-			<destination>{5ef64d60-663c-4bb6-aa63-dffeb671b5f1}</destination>
+			<destination>{2ae23cef-0ff8-4f91-9589-533aac1ba490}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{3d577ece-6733-4ebc-94e6-e57f1d2ccff0}">
+	<object class="SingleSound" id="{1e5f5a02-7a52-4c3c-9c2d-4fe5339d35d1}">
 		<property name="start">
-			<value>6.8243990929705216</value>
+			<value>6.8243990929705234</value>
 		</property>
 		<property name="length">
 			<value>53.244988662131519</value>
 		</property>
 		<relationship name="audioFile">
-			<destination>{4f9a827f-8638-4f1c-8a30-228dae21b367}</destination>
+			<destination>{e038e126-4ec7-4975-b13e-769009cffab5}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{3116a3e8-64c0-4e2a-8782-136bb373179f}">
@@ -364,6 +364,7 @@ For the "gondola_idle" parameter... I think we floated it along with the calm pa
 		</property>
 		<relationship name="automationCurves">
 			<destination>{b007b08d-749c-433b-8da6-2407b86ae8e3}</destination>
+			<destination>{5cbe8c95-fc2a-4f0a-8322-8704d04987cd}</destination>
 		</relationship>
 	</object>
 	<object class="ADSRModulator" id="{20d28e5d-a026-45fb-a5e1-2f8d3983014c}">
@@ -454,6 +455,14 @@ For the "gondola_idle" parameter... I think we floated it along with the calm pa
 		<relationship name="automationPoints">
 			<destination>{b8988e4c-2de2-4156-aba5-fb69ac12dc55}</destination>
 			<destination>{afe68667-cb32-472e-a0ba-670ea4e1923c}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationCurve" id="{5cbe8c95-fc2a-4f0a-8322-8704d04987cd}">
+		<relationship name="parameter">
+			<destination>{17cba755-b59e-42aa-b964-cca426356ef6}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{d13f435d-1a9e-465c-b5f0-e63436299f65}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{49b62ccc-ee57-41a8-b6a3-30973afb0cdb}" />
@@ -571,7 +580,15 @@ For the "gondola_idle" parameter... I think we floated it along with the calm pa
 			<value>50</value>
 		</property>
 		<property name="value">
-			<value>0</value>
+			<value>-7.09999847</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{d13f435d-1a9e-465c-b5f0-e63436299f65}">
+		<property name="position">
+			<value>2</value>
+		</property>
+		<property name="value">
+			<value>-16</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{e2d7614c-3511-4732-bfe9-5c2a5eac94eb}">
@@ -630,7 +647,7 @@ For the "gondola_idle" parameter... I think we floated it along with the calm pa
 			<value>0</value>
 		</property>
 		<property name="value">
-			<value>-7</value>
+			<value>-5.86400795</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{987f058f-4eef-4127-a636-a788576cd0b2}">
@@ -638,7 +655,7 @@ For the "gondola_idle" parameter... I think we floated it along with the calm pa
 			<value>100</value>
 		</property>
 		<property name="value">
-			<value>0</value>
+			<value>1.13599205</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{1b46fd3c-9bc3-4921-8960-d33feaf3ee68}">

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{cb249da0-e0da-4290-839f-e80b60283bde}">
+		<property name="assetPath">
+			<value>Fx - Scanner 2.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>12.800000000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{cd1369ba-266e-4735-9034-3963e9d500c7}</destination>
+		</relationship>
+	</object>
+</objects>

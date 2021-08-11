@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="Snapshot" id="{f2d1ac0c-bac4-47dd-8862-1faa3a7bc3f7}">
+		<property name="name">
+			<value>game_04_gondolafeather_verb</value>
+		</property>
+		<relationship name="mixer">
+			<destination>{fd4d5274-eb22-49cc-9c36-b6a1c7ebd75c}</destination>
+		</relationship>
+		<relationship name="automatableProperties">
+			<destination>{3261218d-dd64-416d-ad98-655016382e4b}</destination>
+		</relationship>
+		<relationship name="markerTracks">
+			<destination>{de4d6595-20de-4951-9da0-654690f29bae}</destination>
+		</relationship>
+		<relationship name="timeline">
+			<destination>{f38da34f-b016-4af2-9629-0dde7fa48dde}</destination>
+		</relationship>
+		<relationship name="snapshotMasterTrack">
+			<destination>{20443d02-d864-4a5b-9f56-b54e7d07dfd7}</destination>
+		</relationship>
+	</object>
+	<object class="EventAutomatableProperties" id="{3261218d-dd64-416d-ad98-655016382e4b}" />
+	<object class="MarkerTrack" id="{de4d6595-20de-4951-9da0-654690f29bae}" />
+	<object class="Timeline" id="{f38da34f-b016-4af2-9629-0dde7fa48dde}" />
+	<object class="SnapshotMasterTrack" id="{20443d02-d864-4a5b-9f56-b54e7d07dfd7}" />
+</objects>

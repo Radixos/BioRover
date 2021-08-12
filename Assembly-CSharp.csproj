@@ -125,10 +125,12 @@
     <Compile Include="Assets\Scripts\World\ObjectOfInterest.cs" />
     <Compile Include="Assets\Scripts\World\ObjectPool.cs" />
     <Compile Include="Assets\Scripts\World\WorldTileManager.cs" />
+    <None Include="Assets\Jiggly Bubble\Shaders\Particle Alpha Blended Cubemap Skybox.shader" />
     <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Scanner\CameraScanning\GroundHalo.shader" />
+    <None Include="Assets\Jiggly Bubble\readme_Jiggly_Bubble.txt" />
     <None Include="Assets\Scanner\CameraScanning\ScanEffect.shader" />
     <None Include="Assets\Scanner\ModelScanning\Intersection1.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
@@ -136,6 +138,7 @@
     <None Include="Assets\Scanner\WorldScanning\Utils.cginc" />
     <None Include="Assets\Scanner\WorldScanning\Transparency Textured.shader" />
     <None Include="Assets\Scanner\WorldScanning\TrianglesFlow\TrianglesFlow.shader" />
+    <None Include="Assets\Jiggly Bubble\Shaders\Particle Alpha Blended Cubemap Stretch.shader" />
     <None Include="Assets\Distant Lands\Thalassophobia - Low Poly Oceans\Contents\Materials\Shaders\Stylized Terrain First Pass.shader" />
     <None Include="Assets\SWS\README.txt" />
     <None Include="Assets\Distant Lands\Thalassophobia - Low Poly Oceans\Contents\Materials\Shaders\Stylized Fog.shader" />
@@ -145,6 +148,8 @@
     <None Include="Assets\Distant Lands\Thalassophobia - Low Poly Oceans\Contents\Materials\Shaders\Stylized Grass.shader" />
     <None Include="Assets\SWS\Changelog.txt" />
     <None Include="Assets\Distant Lands\Thalassophobia - Low Poly Oceans\Contents\Materials\Shaders\Stylized Kelp.shader" />
+    <None Include="Assets\Jiggly Bubble\Shaders\Particle Alpha Blended Cubemap Skybox Stretch.shader" />
+    <None Include="Assets\Jiggly Bubble\Shaders\Particle Alpha Blended Cubemap.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -152,9 +157,11 @@
     <None Include="Assets\Distant Lands\Thalassophobia - Low Poly Oceans\Contents\Materials\Shaders\StylizedTerrain.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Distant Lands\Thalassophobia - Low Poly Oceans\Contents\Materials\Shaders\Stylized Terrain Add Pass.shader" />
+    <None Include="Assets\Jiggly Bubble\Shaders\Particle Alpha Blended Cubemap UV2 Stretch.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Distant Lands\Thalassophobia - Low Poly Oceans\Contents\Materials\Shaders\Stylized Fish.shader" />
     <None Include="Assets\Distant Lands\Thalassophobia - Low Poly Oceans\Contents\Materials\Shaders\Stylized Glass.shader" />
+    <None Include="Assets\Jiggly Bubble\Shaders\Particles Alpha Blended Intensify.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Scanner\WorldScanning\Standard.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
@@ -163,6 +170,7 @@
     <None Include="Assets\SWS\Extensions\DOTween\readme.txt" />
     <None Include="Assets\Distant Lands\Thalassophobia - Low Poly Oceans\Contents\Materials\Shaders\Stylized Caustics.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\Jiggly Bubble\Shaders\Particle Alpha Blended Cubemap Skybox UV2 Stretch.shader" />
     <None Include="Assets\Distant Lands\Thalassophobia - Low Poly Oceans\Contents\Materials\Shaders\Stylized Dynamic Coral.shader" />
     <None Include="Assets\Distant Lands\Thalassophobia - Low Poly Oceans\Contents\Materials\Shaders\Stylized Coral.shader" />
     <None Include="Assets\Distant Lands\Thalassophobia - Low Poly Oceans\README.txt" />
@@ -173,6 +181,8 @@
     <None Include="Assets\SWS\Examples\Assets\Shaders\DiffuseReflectiveShader.shader" />
     <None Include="Assets\Scanner\WorldScanning\Transparency Stripe.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\Jiggly Bubble\Shaders\Particle Alpha Blended Cubemap UV2.shader" />
+    <None Include="Assets\Jiggly Bubble\Shaders\Particles Additive Intensify.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

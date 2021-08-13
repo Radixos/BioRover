@@ -4,17 +4,17 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
 using Scanner;
+using FMODUnity;
 
 public class RoverScanner : MonoBehaviour
 {
     private float coolDownTimer;
     private float coolDownDelay;
-
     private bool isScanning;
     public Image scanID;
     public GameObject laserSource;
     private float targetAngle; // Angle to stop the scan
-
+    private FMOD.Studio.EventInstance instance;
     private RoverController playerCont;
 
     private ObjectPool minimapIconPool;
@@ -33,7 +33,11 @@ public class RoverScanner : MonoBehaviour
         playerCont = FindObjectOfType<RoverController>();
 
         minimapIconPool = GameObject.Find("Minimap Icon Pool").GetComponent<ObjectPool>();
+   
+        instance = FMODUnity.RuntimeManager.CreateInstance("event:/Scanner");
     }
+
+
 
     // Update is called once per frame
     void Update()
@@ -46,7 +50,9 @@ public class RoverScanner : MonoBehaviour
 
                 laserSource.SetActive(true);
                 coolDownTimer = 0.0f;
+                instance.start();
 
+     
                 targetAngle = Mathf.RoundToInt(transform.eulerAngles.y - 1);
 
                 if (targetAngle < 0)
@@ -75,6 +81,7 @@ public class RoverScanner : MonoBehaviour
             if (transform.eulerAngles.y >= targetAngle - 2.0f && transform.eulerAngles.y <= targetAngle)
             {
                 isScanning = false;
+                instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
                 laserSource.SetActive(false);
                 scannedObjects.Clear();
             }

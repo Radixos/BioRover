@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{a717e114-a250-4303-8fe9-9f94708be360}">
+		<property name="name">
+			<value>fade</value>
+		</property>
+		<relationship name="folder">
+			<destination>{a07c7c84-8c35-4f13-ab24-d1abef7fdd3f}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{58a2e008-16d3-49e5-8529-21f696b227f8}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{58a2e008-16d3-49e5-8529-21f696b227f8}">
+		<property name="maximum">
+			<value>50</value>
+		</property>
+		<property name="initialValue">
+			<value>25</value>
+		</property>
+		<property name="seekSpeed">
+			<value>150</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

@@ -8,138 +8,13 @@
 [LOG] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001E7E2760198 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000002819070F488 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SystemI::createSound                     : filename = Fmod project\Build\Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Affinity: 0x8000000000000003, Priority: 0xFFFF7FFC, Stack Size: 114688, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] SystemI::createSound                     : setdata soundi = 000001E7E26C3738 : node = 000001E7582BA610
-[LOG] SystemI::createSound                     : add node to async list : head = 000001E782C38048.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001E7E26C3738
-[LOG] SystemI::createSound                     :     filename = Fmod project\Build\Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     Create name='Fmod project\Build\Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3677504
-[LOG] SystemI::createSound                     :     setdata soundi = 000001E7E26C58F8 : node = 000001E54C099990
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 41248
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001E782C38048.  list count = 0
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001E7582BA720
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Fx - Scanner 3', format=5, channels=2, frequency=48000, lengthbytes=354848, lengthpcm=921600, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999908.
-[LOG] Thread::initThread                       :     Init FMOD file thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFC, Stack Size: 49152, Semaphore: No, Sleep Time: 10, Looping: Yes.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001E7E26C3738
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001E7E26C58F8
-[LOG] SystemI::createSoundInternal             :     Create name='Fmod project\Build\Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3677504
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 41248
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001E54C099AA0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Fx - Scanner 3', format=5, channels=2, frequency=48000, lengthbytes=354848, lengthpcm=921600, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999908.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001E7E26C58F8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001E7E26CC4F8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001E7E26CC4F8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001E7E26D0008
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001E7E26D0008
-[LOG] SoundI::release                          : Fx - Scanner 3 (000001E7E26C58F8)
-[LOG] SoundI::release                          :     Fx - Scanner 3 (000001E7BB5B6388)
-[LOG] SoundI::release                          :     Fx - Scanner 3 (000001E7E26D0008)
-[LOG] SoundI::release                          : Fx - Scanner 3 (000001E7E26C3738)
-[LOG] SoundI::release                          :     Fx - Scanner 3 (000001E7BB5B51A8)
-[LOG] SoundI::release                          :     Fx - Scanner 3 (000001E7E26CC4F8)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SystemI::createSound                     : filename = Fmod project\Build\Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000001E7E26C4158 : node = 000001E54C09A110
-[LOG] SystemI::createSound                     : add node to async list : head = 000001E782C38048.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001E7E26C4158
-[LOG] SystemI::createSound                     : filename = Fmod project\Build\Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     Create name='Fmod project\Build\Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSound                     :     setdata soundi = 000001E7E26C33D8 : node = 000001E54C09A390
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3677504
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001E782C38048.  list count = 0
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 41248
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001E54C09A220
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='mus_lvl4_minigame_piano_loop', format=5, channels=2, frequency=48000, lengthbytes=662112, lengthpcm=2555759, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.402740.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001E7E26C4158
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001E7E26C33D8
-[LOG] SystemI::createSoundInternal             :     Create name='Fmod project\Build\Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3677504
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 41248
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001E54C09A4A0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='mus_lvl4_minigame_synth_loop', format=5, channels=2, frequency=48000, lengthbytes=743584, lengthpcm=2555759, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001E7E26C33D8
-[LOG] SoundI::release                          :  (000001E7BAEECCB8)
-[LOG] SoundI::release                          :     Ambience - Cave tones (000001E7BB5CA068)
-[LOG] SoundI::release                          :  (000001E7BAEED838)
-[LOG] SoundI::release                          :     mus_lvl4_minigame_synth_intro (000001E7BB5C8808)
-[LOG] SoundI::release                          :  (000001E7BAEEB898)
-[LOG] SoundI::release                          :     mus_lvl4_minigame_piano_intro (000001E7BB5C96A8)
-[LOG] SoundI::release                          :  (000001E7BAEECE28)
-[LOG] SoundI::release                          :     Rover - movement - drop(2) (000001E7BB5CAA28)
-[LOG] SoundI::release                          :  (000001E7BAEEFC28)
-[LOG] SoundI::release                          :     Fx-  Bubbles 2 (000001E7BB5CAF08)
-[LOG] SoundI::release                          :  (000001E7BAEED558)
-[LOG] SoundI::release                          :     FX -bubbles swash(2) (000001E7BB5C6788)
-[LOG] SoundI::release                          :  (000001E7BAEEE808)
-[LOG] SoundI::release                          :     FX -bubbles (000001E7BB5CABC8)
-[LOG] SoundI::release                          :  (000001E7BAEEBCE8)
-[LOG] SoundI::release                          :     FX - bubble 1shot (000001E7BB5CA888)
-[LOG] SoundI::release                          : mus_lvl4_minigame_synth_loop (000001E7E26C33D8)
-[LOG] SoundI::release                          :     mus_lvl4_minigame_synth_loop (000001E7BB5B7088)
-[LOG] SoundI::release                          :     mus_lvl4_minigame_synth_loop (000001E7E26C3588)
-[LOG] SoundI::release                          : mus_lvl4_minigame_piano_loop (000001E7E26C4158)
-[LOG] SoundI::release                          :     mus_lvl4_minigame_piano_loop (000001E7BB5AFD28)
-[LOG] SoundI::release                          :     mus_lvl4_minigame_piano_loop (000001E7E26C7AB8)
-[LOG] SoundI::release                          :  (000001E7BAEEAA38)
-[LOG] SoundI::release                          :     Fx - Bubbles 3 (000001E7BB5C8328)
-[LOG] SoundI::release                          :  (000001E7BAEEEF38)
-[LOG] SoundI::release                          :     FX - bubbles heavy (000001E7BB5C7148)
-[LOG] SoundI::release                          :  (000001E7BAEEFD98)
-[LOG] SoundI::release                          :     Fx - Movement bubbles 4 (000001E7BB5C7CA8)
-[LOG] SoundI::release                          :  (000001E7BAEF0358)
-[LOG] SoundI::release                          :     Rover - movement - drop (000001E7BB5C7E48)
-[LOG] SoundI::release                          :  (000001E7BAEF01E8)
-[LOG] SoundI::release                          :     Fx - notification (000001E7BB5C9B88)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] SystemI::close                           : Closed.
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
@@ -147,5 +22,3 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] SystemI::close                           : Closed.
-[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
-[LOG] Thread::callback                         : FMOD file thread finished.

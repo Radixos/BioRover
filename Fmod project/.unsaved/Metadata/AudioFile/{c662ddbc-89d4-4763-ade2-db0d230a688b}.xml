@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{c662ddbc-89d4-4763-ade2-db0d230a688b}">
+		<property name="assetPath">
+			<value>Music/Menu/Chill Mandolin_1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>7.666666666666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{cd1369ba-266e-4735-9034-3963e9d500c7}</destination>
+		</relationship>
+	</object>
+</objects>

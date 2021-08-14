@@ -111,6 +111,7 @@
     <Compile Include="Assets\Scripts\LightManager.cs" />
     <Compile Include="Assets\Scripts\Rover\RandomDrop.cs" />
     <Compile Include="Assets\Scripts\Rover\RoverAudio.cs" />
+    <Compile Include="Assets\Scripts\Rover\RoverController.cs" />
     <Compile Include="Assets\Scripts\Rover\RoverEnergy.cs" />
     <Compile Include="Assets\Scripts\Rover\RoverScanner.cs" />
     <Compile Include="Assets\Scripts\Story\Mission.cs" />

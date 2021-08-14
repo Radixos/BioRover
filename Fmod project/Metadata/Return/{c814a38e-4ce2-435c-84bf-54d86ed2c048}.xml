@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="MixerReturn" id="{c814a38e-4ce2-435c-84bf-54d86ed2c048}">
+		<property name="name">
+			<value>torch_arp</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{7e859d2a-ed89-4aaa-af76-c0749e3427a4}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{cb8e0a41-ff6f-4333-b96a-389448a2e83e}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{90ea7280-7ba1-4665-bd9a-21772d4a44ca}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{7e859d2a-ed89-4aaa-af76-c0749e3427a4}">
+		<relationship name="effects">
+			<destination>{9236cb4a-ebdb-4ab0-bf22-71cb4e9b039f}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{cb8e0a41-ff6f-4333-b96a-389448a2e83e}" />
+	<object class="MixerBusFader" id="{9236cb4a-ebdb-4ab0-bf22-71cb4e9b039f}" />
+</objects>

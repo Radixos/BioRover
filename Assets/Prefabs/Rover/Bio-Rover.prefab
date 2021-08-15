@@ -134,6 +134,7 @@ Transform:
   - {fileID: 3729881904055140426}
   - {fileID: 4240651726763045564}
   - {fileID: 6086517848119164609}
+  - {fileID: 626031363936488339}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -292,6 +293,87 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1714782865519076, guid: 022a543fcd985e4479e9a41c7fef4302,
     type: 3}
   m_PrefabInstance: {fileID: 308914738265598648}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &629986937275968099
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4240651726988984546}
+    m_Modifications:
+    - target: {fileID: 1000011416782818, guid: 29b5d9c61258e52478fa00d5ebe099b6, type: 3}
+      propertyPath: m_Name
+      value: Particle jiggly bubble drop mobile
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012309127664, guid: 29b5d9c61258e52478fa00d5ebe099b6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012309127664, guid: 29b5d9c61258e52478fa00d5ebe099b6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012309127664, guid: 29b5d9c61258e52478fa00d5ebe099b6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012309127664, guid: 29b5d9c61258e52478fa00d5ebe099b6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012309127664, guid: 29b5d9c61258e52478fa00d5ebe099b6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012309127664, guid: 29b5d9c61258e52478fa00d5ebe099b6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012309127664, guid: 29b5d9c61258e52478fa00d5ebe099b6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012309127664, guid: 29b5d9c61258e52478fa00d5ebe099b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012309127664, guid: 29b5d9c61258e52478fa00d5ebe099b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012309127664, guid: 29b5d9c61258e52478fa00d5ebe099b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012309127664, guid: 29b5d9c61258e52478fa00d5ebe099b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012309127664, guid: 29b5d9c61258e52478fa00d5ebe099b6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012309127664, guid: 29b5d9c61258e52478fa00d5ebe099b6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012309127664, guid: 29b5d9c61258e52478fa00d5ebe099b6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 29b5d9c61258e52478fa00d5ebe099b6, type: 3}
+--- !u!1 &629840157754568065 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000011416782818, guid: 29b5d9c61258e52478fa00d5ebe099b6,
+    type: 3}
+  m_PrefabInstance: {fileID: 629986937275968099}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &626031363936488339 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4000012309127664, guid: 29b5d9c61258e52478fa00d5ebe099b6,
+    type: 3}
+  m_PrefabInstance: {fileID: 629986937275968099}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1838381123264107958
 PrefabInstance:
@@ -475,6 +557,11 @@ PrefabInstance:
       propertyPath: cameraTransform
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1450067570799553923, guid: 6f9f6dd684eacb24a89c23d34207bbb7,
+        type: 3}
+      propertyPath: Bubbles
+      value: 
+      objectReference: {fileID: 629840157754568065}
     - target: {fileID: 2869687042369284500, guid: 6f9f6dd684eacb24a89c23d34207bbb7,
         type: 3}
       propertyPath: m_Name

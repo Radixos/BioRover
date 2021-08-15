@@ -115,6 +115,7 @@
     <Compile Include="Assets\Scripts\Rover\RoverEnergy.cs" />
     <Compile Include="Assets\Scripts\Rover\RoverScanner.cs" />
     <Compile Include="Assets\Scripts\Story\Mission.cs" />
+    <Compile Include="Assets\Scripts\Story\MissionInfoManager.cs" />
     <Compile Include="Assets\Scripts\Story\MissionManager.cs" />
     <Compile Include="Assets\Scripts\Story\Objective.cs" />
     <Compile Include="Assets\Scripts\Story\ObjectiveManager.cs" />

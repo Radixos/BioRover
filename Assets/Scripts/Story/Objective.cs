@@ -20,12 +20,13 @@ public class Objective : MonoBehaviour
 
     [Header("Interact Type")]
     public List<ObjectOfInterest> interactingObjects = new List<ObjectOfInterest>();
+    private int completedInteractingObjects = 0;
 
     // Start is called before the first frame update
     //void Start()
     //{
-       // objectiveNameDisplay = GameObject.Find("Objective Name Display").GetComponent<Text>();
-        //objectiveNameDisplay.color = Color.white;
+    // objectiveNameDisplay = GameObject.Find("Objective Name Display").GetComponent<Text>();
+    //objectiveNameDisplay.color = Color.white;
     //}
 
     // Update is called once per frame
@@ -47,31 +48,33 @@ public class Objective : MonoBehaviour
         if (triggerCollider.playerAtLocation)
         {
             isCompleted = true;
-            objectiveNameDisplay.text = "Objective Completed!";
-            objectiveNameDisplay.color = Color.green;
+            //objectiveNameDisplay.text = "Objective Completed!";
+            //objectiveNameDisplay.color = Color.green;
         }
-        else
-            objectiveNameDisplay.text = objectiveName;
+        //else
+        //objectiveNameDisplay.text = objectiveName;
     }
 
     void InteractTypeLogic()
     {
-        int completedInteractingObjects = 0;
+        int completed = 0;
 
         for (int i = 0; i < interactingObjects.Count; i++)
         {
             if (interactingObjects[i].isScanned)
-                completedInteractingObjects++;
+                completed++;
         }
 
         if (completedInteractingObjects == interactingObjects.Count)
         {
             isCompleted = true;
-            objectiveNameDisplay.text = "Objective Completed!";
-            objectiveNameDisplay.color = Color.green;
+            //objectiveNameDisplay.text = "Objective Completed!";
+            //objectiveNameDisplay.color = Color.green;
         }
-        else
-            objectiveNameDisplay.text = objectiveName + ": " + completedInteractingObjects.ToString() + "/" + interactingObjects.Count.ToString();
+        //else
+        //objectiveNameDisplay.text = objectiveName + ": " + completedInteractingObjects.ToString() + "/" + interactingObjects.Count.ToString();
+
+        completedInteractingObjects = completed;
 
     }
 
@@ -84,8 +87,8 @@ public class Objective : MonoBehaviour
     {
         SetObjectiveObjectState(true);
 
-        objectiveNameDisplay = GameObject.Find("Objective Name Display").GetComponent<Text>();
-        objectiveNameDisplay.color = Color.white;
+        //objectiveNameDisplay = GameObject.Find("Objective Name Display").GetComponent<Text>();
+        //objectiveNameDisplay.color = Color.white;
     }
 
     private void SetObjectiveObjectState(bool state)
@@ -104,5 +107,31 @@ public class Objective : MonoBehaviour
 
                 break;
         }
+    }
+
+    public string GetObjectiveInfo()
+    {
+        if (isCompleted)
+            return objectiveName + " - Completed!";
+        else
+        {
+            switch (objectiveType)
+            {
+                case ObjectiveType.TRIGGER:
+                    return objectiveName;
+                case ObjectiveType.INTERACT:
+                    return objectiveName + ": " + completedInteractingObjects.ToString() + "/" + interactingObjects.Count.ToString();
+            }
+        }
+
+        return objectiveName;
+    }
+
+    public Color GetObjectiveInfoColor()
+    {
+        if (isCompleted)
+            return Color.green;
+        else
+            return Color.white;
     }
 }

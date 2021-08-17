@@ -21,7 +21,7 @@ public class MenuScript : MonoBehaviour
     public void StartGame()
     {
         changeTo = SceneCollection.GAMEPLAY;
-        SceneManager.LoadScene((int)changeTo);       
+        SceneManager.LoadScene("MainGame_Mani");       
     }
 
     public void QuitGame()

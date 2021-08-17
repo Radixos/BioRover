@@ -78,7 +78,7 @@ public class RoverScanner : MonoBehaviour
             RaycastHit hit;
 
             // Checking if scanner has completed a 360 journey
-            if (transform.eulerAngles.y >= targetAngle - 2.0f && transform.eulerAngles.y <= targetAngle)
+            if (transform.eulerAngles.y >= targetAngle - 4.0f && transform.eulerAngles.y <= targetAngle)
             {
                 isScanning = false;
                 instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);

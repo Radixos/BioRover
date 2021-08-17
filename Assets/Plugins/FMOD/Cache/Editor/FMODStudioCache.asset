@@ -220,6 +220,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-8489816432900711697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicTense/Area
+  m_EditorClassIdentifier: 
+  Name: Area
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-8481907811841183824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -845,7 +865,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -7631495720101820328}
+  - {fileID: 5592288238899636111}
   MinDistance: 1
   MaxDistance: 65
   Length: 19200
@@ -2741,7 +2761,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -1425080675462186154}
+  - {fileID: 506960573082366343}
   MinDistance: 1
   MaxDistance: 40
   Length: 5000
@@ -3212,7 +3232,7 @@ MonoBehaviour:
   - {fileID: 4251439016836814165}
   StringsBanks:
   - {fileID: 6942734029422243236}
-  stringsBankWriteTime: 637648233872931774
+  stringsBankWriteTime: 637648272473305214
   cacheVersion: 6
 --- !u!114 &66521731120072055
 MonoBehaviour:
@@ -3437,6 +3457,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &506960573082366343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BaseAlarm/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &553179236841826549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3500,6 +3540,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &657254581857087816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicTense/Gondola_idle
+  m_EditorClassIdentifier: 
+  Name: Gondola_idle
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &726877648571546206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4209,7 +4269,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 7139053725277154256}
+  - {fileID: 9026664395245067517}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -4295,6 +4355,26 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &3286117763704311734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicTense/calm
+  m_EditorClassIdentifier: 
+  Name: calm
+  Min: 0
+  Max: 100
+  Default: 100
   ID:
     data1: 0
     data2: 0
@@ -4763,7 +4843,7 @@ MonoBehaviour:
   Path: Fmod project/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637648233872921802
+  lastModified: 637648272474267455
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -5280,6 +5360,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &5592288238899636111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Poi/Occlusion4
+  m_EditorClassIdentifier: 
+  Name: Occlusion4
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &5606569518562284886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5400,10 +5500,10 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -7731206318258892314}
-  - {fileID: 3600146178453109723}
-  - {fileID: 5843288634043346365}
-  - {fileID: -5183141383878372623}
+  - {fileID: 3286117763704311734}
+  - {fileID: -8489816432900711697}
+  - {fileID: 657254581857087816}
+  - {fileID: 7392599331941632982}
   MinDistance: 0
   MaxDistance: 0
   Length: 79309
@@ -5774,7 +5874,7 @@ MonoBehaviour:
   Path: Fmod project/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637648233872931774
+  lastModified: 637648272473305214
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -5904,6 +6004,26 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 9000
 --- !u!114 &7205146424631711187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicTense/fade
+  m_EditorClassIdentifier: 
+  Name: fade
+  Min: 0
+  Max: 50
+  Default: 25
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &7392599331941632982
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6573,6 +6693,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 51200
+--- !u!114 &9026664395245067517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Reverb1/Occlusion4
+  m_EditorClassIdentifier: 
+  Name: Occlusion4
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &9056210242426691546
 MonoBehaviour:
   m_ObjectHideFlags: 0

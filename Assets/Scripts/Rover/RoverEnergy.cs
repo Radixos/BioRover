@@ -35,6 +35,6 @@ public class RoverEnergy : MonoBehaviour
 
         alphaFloat = (100 - playerController.roverEnergy) * 0.009f;
         visionImage.color = new Color(0, 0, 0, alphaFloat);
-        energyText.text = playerController.roverEnergy.ToString();
+        energyText.text = playerController.roverEnergy.ToString("F2");
     }   
 }

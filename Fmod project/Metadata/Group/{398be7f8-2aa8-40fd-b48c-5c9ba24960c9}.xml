@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="MixerGroup" id="{398be7f8-2aa8-40fd-b48c-5c9ba24960c9}">
+		<property name="name">
+			<value>AREA2</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{ba3f002c-32e5-42f5-ba68-d4751a3b44e7}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{e027850b-6e33-44c8-8d4d-2df8a72f0c81}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{0779dba9-5d74-4622-af7a-230bda0ba544}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{ba3f002c-32e5-42f5-ba68-d4751a3b44e7}">
+		<relationship name="effects">
+			<destination>{785d5b76-41a2-41e5-bebe-1bb0a6b06769}</destination>
+			<destination>{d36b0219-9173-4b0b-aef1-b32587ef6d02}</destination>
+			<destination>{56ca9b56-47e6-4332-a0ff-08417ff1bc42}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{e027850b-6e33-44c8-8d4d-2df8a72f0c81}" />
+	<object class="MixerBusFader" id="{785d5b76-41a2-41e5-bebe-1bb0a6b06769}" />
+	<object class="LowpassEffect" id="{d36b0219-9173-4b0b-aef1-b32587ef6d02}" />
+	<object class="DelayEffect" id="{56ca9b56-47e6-4332-a0ff-08417ff1bc42}">
+		<property name="delay">
+			<value>7.5999999</value>
+		</property>
+		<property name="feedback">
+			<value>8.5</value>
+		</property>
+		<property name="level">
+			<value>-27</value>
+		</property>
+		<property name="dryLevel">
+			<value>-26</value>
+		</property>
+	</object>
+</objects>

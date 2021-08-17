@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
 	<object class="MixerGroup" id="{0c2cc9b4-65ab-498d-960b-3b7e1fb07627}">
+		<property name="volume">
+			<value>-1</value>
+		</property>
 		<property name="name">
 			<value>tunes</value>
 		</property>

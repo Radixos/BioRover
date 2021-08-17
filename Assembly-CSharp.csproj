@@ -105,6 +105,7 @@
     <Compile Include="Assets\Scanner\WorldScanning\ScannerObject.cs" />
     <Compile Include="Assets\Scripts\AudioScripts\CustomListenerScript.cs" />
     <Compile Include="Assets\Scripts\AudioScripts\MusicIntensity.cs" />
+    <Compile Include="Assets\Scripts\BubblesJump.cs" />
     <Compile Include="Assets\Scripts\Camera\FollowTarget.cs" />
     <Compile Include="Assets\Scripts\Camera\MinimapCamera.cs" />
     <Compile Include="Assets\Scripts\FollowRover.cs" />

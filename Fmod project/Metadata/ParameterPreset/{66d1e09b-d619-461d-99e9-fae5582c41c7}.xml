@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{66d1e09b-d619-461d-99e9-fae5582c41c7}">
+		<property name="name">
+			<value>Area</value>
+		</property>
+		<relationship name="folder">
+			<destination>{0f4d91e1-84fd-406a-8595-c6cb253b1f71}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{f0fb3fb8-fa66-406f-8cd9-e022b37b3841}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{f0fb3fb8-fa66-406f-8cd9-e022b37b3841}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>4</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>coral</value>
+			<value>deep sea</value>
+			<value>dusk forest</value>
+			<value>kelp</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeedDescending">
+			<value>1.3500000238418579</value>
+		</property>
+	</object>
+</objects>

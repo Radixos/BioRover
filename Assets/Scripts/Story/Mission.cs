@@ -9,6 +9,8 @@ public class Mission : MonoBehaviour
     public ObjectiveManager objectiveSet;
     public bool missionCompleted;
 
+    public bool isMain;
+
     private Text missionNameDisplay;
 
     // Start is called before the first frame update
@@ -24,11 +26,27 @@ public class Mission : MonoBehaviour
         if (objectiveSet.allObjectivesCompleted)
         {
             missionCompleted = true;
-            missionNameDisplay.text = "Mission Completed!";
-            missionNameDisplay.color = Color.yellow;
+            //missionNameDisplay.text = "Mission Completed!";
+            //missionNameDisplay.color = Color.yellow;
         }
-        else
-            missionNameDisplay.text = missionName;
+        //else
+        //missionNameDisplay.text = missionName;
 
+    }
+
+    public string GetMissionInfo()
+    {
+        if (objectiveSet.allObjectivesCompleted)
+            return missionName + " - Completed!";
+        else
+            return missionName;
+    }
+
+    public Color GetMissionInfoColor()
+    {
+        if (isMain)
+            return Color.yellow;
+        else
+            return Color.cyan;
     }
 }

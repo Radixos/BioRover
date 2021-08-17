@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{cf7dcf21-e3bd-497c-ba07-10e088d6f77f}">
+		<property name="name">
+			<value>eye_distance</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ee171d82-ac7f-4fb0-abde-7ed29897262a}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{99db3554-0ed0-4492-b141-0294da637859}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{99db3554-0ed0-4492-b141-0294da637859}">
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+		<property name="seekSpeed">
+			<value>1</value>
+		</property>
+		<property name="seekSpeedDescending">
+			<value>0.20000000298023224</value>
+		</property>
+		<property name="seekSpeedAsymmetric">
+			<value>true</value>
+		</property>
+	</object>
+</objects>

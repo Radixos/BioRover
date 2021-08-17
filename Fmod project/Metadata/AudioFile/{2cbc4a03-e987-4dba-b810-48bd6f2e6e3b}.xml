@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{2cbc4a03-e987-4dba-b810-48bd6f2e6e3b}">
+		<property name="assetPath">
+			<value>InPatience_Rhythm.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>27.428571428571427</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{cd1369ba-266e-4735-9034-3963e9d500c7}</destination>
+		</relationship>
+	</object>
+</objects>

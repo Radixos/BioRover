@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPresetFolder" id="{ee171d82-ac7f-4fb0-abde-7ed29897262a}">
+		<property name="name">
+			<value>eye_wall</value>
+		</property>
+		<relationship name="folder">
+			<destination>{33f31988-b26f-4d64-ac39-c09dfe8ffc0d}</destination>
+		</relationship>
+	</object>
+</objects>
